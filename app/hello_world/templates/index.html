@@ -1,0 +1,12 @@
+{% load static %}
+<html>
+  <head>
+    <title>Django-Docker-NGINX Template</title>
+  </head>
+  <h1>Hey there! This worked for you!</h1>
+  <article>The image you see below is a static file served by the NGINX proxy server.<br/>It is intentionally left here to showcase that django on docker still recognizes your static files and will also recognize the media files.</article> 
+  <img src="{% static 'AbhishekIyengar.png' %}" alt="Abhishek Iyengar" />
+  <figcaption>
+    Here's the author of the template you are using!
+  </figcaption>
+</html>

@@ -1,0 +1,25 @@
+NGINX Params file here : https://uwsgi-docs.readthedocs.io/en/latest/Nginx.html#what-is-the-uwsgi-params-file
+
+{
+    (From ROOT folder)
+    (Check on http://127.0.0.1:8000)
+    (Build the container in Development Mode Only)
+    docker-compose up
+}
+
+
+
+{
+    (From proxy folder)
+    (Testing the build)
+    docker build .
+}
+
+
+
+{
+    (From ROOT folder)
+    (Check on http://127.0.0.1:8080/)
+    (Build the container in Production Mode)
+    docker-compose -f docker-compose-deploy.yml up --build
+}
